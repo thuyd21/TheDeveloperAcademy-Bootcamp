@@ -19,7 +19,7 @@ class GuessingGame:
                 print('Too low.')
             elif guess > number:
                 print('Too high.')
-            elif guess == number:
+            else:
                 print('You Win!')
                 break
 
