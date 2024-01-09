@@ -16,9 +16,9 @@ class Dice:
                     print('Please enter y/n.')
                     continue
                 break
-            if reroll.lower() == 'y':
+            if reroll == 'y':
                 continue
-            elif reroll.lower() == 'n':
+            elif reroll == 'n':
                 break
 
 d6 = Dice()
