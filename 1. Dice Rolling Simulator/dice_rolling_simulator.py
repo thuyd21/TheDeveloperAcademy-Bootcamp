@@ -5,7 +5,7 @@ class Dice:
         self.min = min
         self.max = max
 
-    def roll(self):
+    def roll(self) -> None:
         while True:
             result = random.randint(self.min, self.max)
             print(f'Your roll is {result}')
