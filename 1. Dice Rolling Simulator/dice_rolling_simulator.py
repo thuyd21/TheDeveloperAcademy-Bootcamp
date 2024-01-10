@@ -9,17 +9,21 @@ class Dice:
         while True:
             result = random.randint(self.min, self.max)
             print(f'Your roll is {result}')
-            while True:
-                reroll = input('Would you like to roll again (y/n)? ')
-                reroll = reroll.lower()
-                if reroll not in ('y', 'n'):
-                    print('Please enter y/n.')
-                    continue
+            reroll = self._reroll()
+            if not reroll:
                 break
-            if reroll == 'y':
-                continue
-            elif reroll == 'n':
-                break
+    
+    def _reroll(self) -> bool:
+        while True:
+            confirm = ['y']
+            deny = ['n']
+            user_input = input(f'Would you like to roll again ({confirm[0]}/{deny[0]})? ')
+            decision = user_input.lower()
+            if decision in confirm:
+                return True
+            if decision in deny:
+                return False
+            print(f'Please enter {confirm[0]}/{deny[0]}.')
 
 d6 = Dice()
 d6.roll()
