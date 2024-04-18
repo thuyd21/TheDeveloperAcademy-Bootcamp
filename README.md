@@ -1,5 +1,8 @@
 Assignment of Week 1 
-Group Members" Alexander, Thuy, Farina, Katerina 
+
+
+
+Group Members: Alexander, Thuy, Farina, Katerina 
 
 
 
