@@ -1,1 +1,2 @@
-assignment of week 1 
+Assignment of week 1 
+Group Members" Alexander, Thuy, Farina, Katerina 
